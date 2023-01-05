@@ -1,0 +1,182 @@
+<!--
+    2022년도 하반기 방학 SW 아카데미 : Spring 웹 서비스 개발 캠프
+    Week 1 숙제 중, 닷홈에 원하는 페이지 html, css 동일하게 구현해보기
+    따라서 만들어볼 웹 페이지 : https://my-learning.w3schools.com 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>W1 : dothome hosting homework</title>
+</head>
+<body>
+    <!--navigation bar-->
+    <header>
+        <ul id="navigation-bar">
+            <li><a id="logo"><img src="assets/logo.png" height="50px" width="50px"></a></li>
+            <li><a id="current-page">My learning</a></li>
+            <li><a>Paid courses</a></li>
+            <li><a>Certificates</a></li>
+            <li><a>Videos</a></li>
+            <li><a>Spaces</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Billing</a></li>
+            <li style="float:right;"><a>Log out</a></li>
+            <li style="float:right;"><a id="community">Community</a></li>
+            
+        </ul>
+    </header>
+
+    <!--main board-->
+    <div id="main-board">
+        <h1>My Learning</h1>
+        <div id="board-container">
+            <h2>Hi, Yujin</h2>
+            <p>Welcome to the new "My learning" here at W3schools. 
+                This will be your hub to all the <br>
+                tutorials we offer and your learning progress.</p>
+            <p>We hope you will continue to learn with us.</p>
+            <button class="btn">Continue "Learn Javascript"</button>
+            <button id="btn-browse">Browse tutorials</button>
+        </div>
+        <div id="score-container">
+            <h4>Good Job!</h4> 
+            <p id="yourscore">your score</p>  
+            <div id="score-graph"><strong>423</strong><br>points</div>
+            <p id="scorefactor">score factors</p>
+            <div class="row">
+                <div class="factor">
+                    <p><strong>173</strong><br>lesson read</p>
+                </div>
+                <div class="factor">
+                    <p><strong>173</strong><br>lesson read</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="factor">
+                    <p><strong>173</strong><br>lesson read</p>
+                </div>
+                <div class="factor">
+                    <p><strong>173</strong><br>lesson read</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <!--content-->
+    <div id="content">
+        <!--in progress-->
+        <div id="in-progress">
+            <h2>In Progress</h2>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn JavaScript</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn Java</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn CSS</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card larger-card">
+                <p class="course-small-text">Tip</p>
+                <p class="course-title">Collect Stars</p>
+                <ul>
+                    <li>Read all the lessons in a tutorial, and get a star.</li>
+                    <li>Score 100% on the quiz in a tutorial, and get a star.</li>
+                    <li>Complete all the exercises in a tutorial, and get another star.</li>
+                </ul>
+                <ul id="tip-card-link">
+                    <li><a>View excercises</a></li>
+                    <li><a>Take a quize</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <!--My tutorials-->
+        <div id="my-tutorials">
+            <h2>My Tutorials</h2>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn JavaScript</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn Java</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn CSS</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn CSS</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn CSS</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <!--in progress-->
+        <div id="career-paths">
+            <h2>Career Paths</h2>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn JavaScript</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn Java</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card">
+                <div class="course-icon-box"></div>
+                <p class="course-small-text">TUTORIAL</p>
+                <p class="course-title">Learn CSS</p>
+                <p class="course-small-progressed"><strong>17</strong> of <strong>161</strong> lessons completed</p>
+            </div>
+            <div class="tutorial-card larger-card">
+                <p class="course-small-text">Career boost</p>
+                <p class="course-title">Ready to get your certificate?</p>
+                <ul>
+                    <li>Purchase access to one of our exams</li>
+                    <li>Earn your certificate of completion</li>
+                    <li>Share your certificate</li>
+                </ul>
+                <button class="btn explore-certificates">Explore certificates</button>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
